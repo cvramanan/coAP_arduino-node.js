@@ -13,8 +13,8 @@ server.on('request', function(req, res) {
       //  res.write(qs.parse(body));
       req.on('end',function(){
              var POST =  qs.parse(body);
-             console.time(JSON.stringify(POST).slice(4,7));
-            console.timeEnd(JSON.stringify(POST).slice(4,7));
+             console.time(JSON.stringify(POST));
+            console.timeEnd(JSON.stringify(POST));
          });
 
 
